@@ -1,81 +1,10 @@
-<!DOCTYPE html>
 <html>
-
-<head>
-    <title>My Second Cloud Application: ImageGPT by Midjourney</title>
-    <style>
-        body {
-            background: linear-gradient(to right, #555e8d, #e4bfcb);
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            position: relative;
-            /* 添加相对定位，使得Logo的绝对定位参考对象 */
-        }
-        
-        header {
-            background-color: linear-gradient(to right, #555e8d, #e4bfcb);
-            padding: 10px;
-            text-align: center;
-        }
-        
-        header img {
-            width: 100px;
-            height: auto;
-            position: absolute;
-            /* 绝对定位 */
-            top: 5px;
-            /* 与顶部的距离 */
-            left: 10px;
-            /* 与左侧的距离 */
-            vertical-align: middle;
-        }
-        
-        h1 {
-            margin: 0;
-        }
-        
-        form {
-            margin-top: 20px;
-        }
-        
-        input[type="text"] {
-            padding: 8px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-        }
-        
-        input[type="submit"] {
-            padding: 8px 20px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            background-color: #9f21f3;
-            color: #ffffff;
-            cursor: pointer;
-        }
-        
-        p {
-            margin-top: 20px;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <img src="C:\Users\A\Desktop\新加坡\NEW\202111100940554922.jpg" alt="Logo ">
-        <h1>My Second Cloud Application: ImageGPT by Midjourney</h1>
-    </header>
+    <h1>My Second Cloud Application : imageGPT by Midjourney</h1>
     <form action="/" method="post">
-        <p style="font-size: 30px;">Please enter your question:</p>
-        <p><input type="text" name="question"></p>
-        <p><input type="submit" value="Enter"></p>
+        <p>Please describe the picture  your want :</p >
+        <p> <input type="text" name ="question"></p >
+        <p><input type="submit" value="Enter"></p >
     </form>
-    <p>Reply: {{result}}</p>
-    <p><img src= {{result}}></p>
-</body>
-
-</html>
+    <p>reply : {{result}}</p >
+    <p>< img src={{result}}></p >
+<html>
